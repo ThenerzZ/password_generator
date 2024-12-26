@@ -16,17 +16,15 @@ def build():
         '--windowed',
         f'--icon={icon}',
         '--add-data=theme.py;.',
-        '--clean',
-        '--noconsole',
-        # Add required DLLs and dependencies
         '--hidden-import=cryptography',
         '--hidden-import=PIL',
-        '--hidden-import=tkinter',
+        '--hidden-import=PIL._tkinter_finder',
+        '--collect-all=cryptography',
+        '--collect-all=tkinter',
+        '--clean',
+        '--noconsole',
         # Add runtime hooks
-        '--runtime-hook=hooks.py',
-        # Add additional options for better Windows compatibility
-        '--win-private-assemblies',
-        '--win-no-prefer-redirects',
+        '--runtime-hook=hooks/hook-cryptography.py',
     ])
 
 if __name__ == "__main__":
