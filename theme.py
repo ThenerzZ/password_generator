@@ -1,6 +1,20 @@
 from tkinter import ttk
 import tkinter as tk
 
+def get_system_font():
+    """Get the best available system font"""
+    try:
+        import platform
+        system = platform.system()
+        if system == "Darwin":  # macOS
+            return "SF Pro Text"
+        elif system == "Windows":
+            return "Segoe UI"
+        else:
+            return "DejaVu Sans"
+    except:
+        return "TkDefaultFont"
+
 class ModernTheme:
     @staticmethod
     def setup_theme():
@@ -20,7 +34,7 @@ class ModernTheme:
         style.configure(".",
             background=bg_color,
             foreground=text_color,
-            font=("SF Pro Text", 13),
+            font=(get_system_font(), 13),
             relief="flat"
         )
         
