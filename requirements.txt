@@ -1,2 +1,5 @@
 cryptography>=3.4.7
-pillow>=8.0.0  # For better font rendering 
+pillow>=8.0.0
+pyinstaller>=5.7.0
+setuptools>=65.5.1
+wheel>=0.38.4 
