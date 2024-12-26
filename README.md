@@ -76,7 +76,7 @@ pip install -r requirements.txt
 
 1. Run the application:
 ```bash
-python password_generator.py
+python main.py
 ```
 2. First time setup: 
 - Enter a master password
