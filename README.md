@@ -125,7 +125,7 @@ python password_generator.py
 
 ## Dependencies
 - cryptography>=3.4.7: For encryption and decryption
-- pillow>=8.0.000000000: For improved font rendering
+- pillow>=8.0.0: For improved font rendering
 - tkinter: For GUI (included with Python)
 
 ## Security Considerations
