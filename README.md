@@ -1,6 +1,6 @@
 # Secure Password Manager
 
-A modern, secure password manager with an Apple-inspired dark mode UI built in Python. This application provides a secure way to generate, store, and manage passwords with multiple layers of encryption and security features.
+A modern, secure password manager with an Apple-inspired UI built in Python. This application provides a secure way to generate, store, and manage passwords with multiple layers of encryption and security features.
 
 
 ## Features
